@@ -6,16 +6,27 @@ const GlobeComponent = () => {
   let mapContainer: HTMLDivElement | undefined;
 
   const visitedCountries = [
+    "Argentina",
+    "Brazil",
+    "Uruguay",
+    "Chile",
+    "Colombia",
+    "Paraguay",
+    "USA",
+    "Canada",
+    "Mexico",
+    "Spain",
     "France",
-    "China",
     "Italy",
-    "Sri Lanka",
-    "Turkey",
-    "Greece",
-    "Malta",
-    "Hungary",
-    "Portugal",
-    "Marocco",
+    "England",
+    "Scotland",
+    "Wales",
+    "Germany",
+    "Netherlands",
+    "Vietnam",
+    "Thailand",
+    "Cambodia",
+    "Japan"
   ];
 
   onMount(() => {
@@ -29,7 +40,7 @@ const GlobeComponent = () => {
       .geoOrthographic()
       .scale(250)
       .center([0, 0])
-      .rotate([0, -30])
+      .rotate([65, -10])
       .translate([width / 2, height / 2]);
 
     const initialScale = projection.scale();
@@ -61,7 +72,7 @@ const GlobeComponent = () => {
       .append("path")
       .attr("d", (d: any) => pathGenerator(d as any))
       .attr("fill", (d: { properties: { name: string } }) =>
-        visitedCountries.includes(d.properties.name) ? "#E63946" : "white"
+        visitedCountries.includes(d.properties.name) ? "green" : "white"
       )
       .style("stroke", "black")
       .style("stroke-width", 0.3)
