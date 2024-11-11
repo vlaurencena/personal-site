@@ -11,9 +11,11 @@ interface Props {
   colorText?: string;
   height?: string;
   width?: string;
+  download?: string;
 }
 
-const { title, body, colSpan, rowSpan, href, colorText, height } = Astro.props;
+const { title, body, colSpan, rowSpan, href, colorText, height, download } =
+  Astro.props;
 ---
 
 <div
@@ -23,21 +25,23 @@ const { title, body, colSpan, rowSpan, href, colorText, height } = Astro.props;
     colSpan || "md:col-span-2"
   } ${rowSpan || ""}`}
 >
-  {
-    href ? (
-      <a href={href} class={`h-full w-full ${colorText || " "}`}>
-        <Icon
-          name="ri:arrow-right-up-line"
-          class="h-6 float-right group-hover:text-primary-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ease-in-out duration-100 z-20"
-        />
-        <Content title={title} body={body}>
-          <slot />
-        </Content>
-      </a>
-    ) : (
-      <Content title={title} body={body}>
-        <slot />
-      </Content>
-    )
-  }
+{href ? (
+  <a
+    href={href}
+    class={`h-full w-full ${colorText || " "}`}
+    {...(download === "True" ? { download: "Víctor Laurencena - Resume" } : {})}
+  >
+    <Icon
+      name={download === "True" ? "ri:arrow-down-line" : "ri:arrow-right-up-line"}
+      class="h-6 float-right group-hover:text-primary-500 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ease-in-out duration-100 z-20"
+    />
+    <Content title={title} body={body}>
+      <slot />
+    </Content>
+  </a>
+) : (
+  <Content title={title} body={body}>
+    <slot />
+  </Content>
+)}
 </div>
