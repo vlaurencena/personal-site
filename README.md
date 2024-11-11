@@ -1,32 +1,12 @@
-# ⚡️astro-bento-portfolio
+# Personal site
 
-## A personal portfolio website made using `Astro`.
+My personal site website made using `Astro`.
 
-![astro-bento-portfolio | Bento-like Personal Porfolio Template](public/preview.png)
+To view my live site, **[click here](https://victorlaurencena.netlify.app/)**.
 
-To view a demo example, **[click here](https://sparkly-speculoos-0c9197.netlify.app/)**
+I used the following Astro template: **[astro-bento-portfolio](https://github.com/Ladvace/astro-bento-portfolio)**.
 
-or my portfolio **[click here](https://gianmarco.xyz/)**
-
-## Features
-
-- Modern and Minimal bento-like, sleek UI Design
-- All in one page (almost)
-- Fully Responsive
-- Performances and SEO optimizations
-- Ready to be deployed on [Netlify](https://www.netlify.com/)
-- Blog
-- RSS support (your-domain/rss.xml)
-- Cool 3d globe
-
-## Tech Stack
-
-- [Astro](https://astro.build)
-- [unocss](https://unocss.dev/)
-- [motion](https://motion.dev/)
-- [d3](https://d3js.org/)
-
-# Steps ▶️
+## Using this repo
 
 ```bash
 # Clone this repository
@@ -51,23 +31,3 @@ $ pnpm run dev
 or
 $ npm run dev
 ```
-
-## REMOVE THE umami analytics script tag (or replace it with your id) in `src/layouts/Layout.astro`
-
-# Configuration
-
-remember to replace the `site` and other properties with your data in `astro.config.mjs`
-
-# Deploy on Netlify 🚀
-
-Deploying your website on Netlify it's optional but I reccomand it in order to deploy it faster and easly.
-
-You just need to fork this repo and linking it to your Netlify account.
-
-or
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ladvace/astro-bento-portfolio)
-
-## Authors ❤️
-
-- Gianmarco - https://github.com/Ladvace
