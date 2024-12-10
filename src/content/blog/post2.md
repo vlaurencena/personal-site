@@ -2,7 +2,7 @@
 layout: ../../layouts/LayoutBlogPost.astro
 title: "How ChatGPT works, its top 3 limitations, and how to fix them"
 description: "Explore the inner workings of the AI that changed the game. Learn how ChatGPT works and how to solve its most common mistakes."
-pubDate: 2024-12-10asdf
+pubDate: 2024-12-10
 category: "intro"
 ---
 
