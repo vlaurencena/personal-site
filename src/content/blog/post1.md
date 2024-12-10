@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LayoutBlogPost.astro
-title: "Software Development Life Cycle Phases: Key Steps and Processes"
-description: "https://vanguard-x.com/software-development/software-development-life-cycle-phases/"
+title: "Software development life cycle phases: key steps and processes"
+description: "From planning to maintenance, understand all about the software development life cycle phases and learn to navigate the development process to success."
 pubDate: 2024-12-10
 category: "intro"
 ---
