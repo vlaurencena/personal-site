@@ -15,26 +15,25 @@ To view my live site, **[click here](https://victorlaurencena.netlify.app/)**.
 - Contact information
 
 ## Run this repo locally
-
+1. Clone this repository:
 ```bash
-# Clone this repository
 $ git clone https://github.com/vlaurencena/personal-site
 ```
 
+2. Go into the repository:
 ```bash
-# Go into the repository
 $ cd personal-site
 ```
 
+3. Install dependencies: 
 ```bash
-# Install dependencies
 $ pnpm install
 or
 $ npm install
 ```
 
+4. Start the project in development:
 ```bash
-# Start the project in development
 $ pnpm run dev
 or
 $ npm run dev
