@@ -32,9 +32,9 @@ const { Content } = await entry.render();
 <Content />
 
 <style is:global>
-  main {
-    background-color: white;
-  },
+  body {
+    height: auto !important;
+  }
   h1,
   h2,
   h3,
@@ -87,6 +87,15 @@ const { Content } = await entry.render();
   ol {
     margin-left: 20px;
     margin-bottom: 10px;
+  }
+
+  ol li {
+    color: black;
+    list-style: auto;
+  }
+
+  ul li {
+    list-style: auto;
   }
 
   blockquote {

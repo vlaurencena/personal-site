@@ -5,6 +5,9 @@ export default defineConfig({
   content: {
     filesystem: ["**/*.{html,js,ts,jsx,tsx,vue,svelte,astro}"],
   },
+  shortcuts: {
+    "article-ul-li": "ul:li:text-red-500",
+  },
   theme: {
     boxShadow: {
       custom: `2px 2px 0`,
